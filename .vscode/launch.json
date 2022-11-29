@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+                "!**/dist/**"
+            ],
+            // 1. Type of application to attach to
+            "type": "node",
+            // 2. Type of request. In this case 'attach'
+            "request": "attach",
+            // 3. Restart the debugger whenever it gets disconnected
+            "restart": true,
+            // 4. Port to connect to 
+            "port": 9229,
+            "address": "localhost",
+            // 5. Name of the configuration
+            "name": "Attach-workflow-mgr",
+            // 6. Connect to /node directory of docker
+            "remoteRoot": "/dist",
+            "localRoot": "${workspaceFolder}/examples/bri-2/workflow-mgr/dist/"
+        }
+    ]
+}
