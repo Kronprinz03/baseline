@@ -56,7 +56,7 @@ npm run dev
 ```
 npm install
 npm run build
-DOCKER_TAG=4.1.7 docker-compose -f up
+DOCKER_TAG=4.1.7 docker-compose up
 ```
 Navigate to `http://localhost:3000` on your web browser to view the `dashboard`.
 
